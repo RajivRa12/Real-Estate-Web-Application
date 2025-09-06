@@ -4,7 +4,6 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useProperties, useFeaturedProperties } from '@/hooks/useProperties';
 import Navigation from '@/components/Navigation';
-import APITest from '@/components/APITest';
 
 const Homepage = () => {
   const { properties, loading, error } = useProperties();
@@ -17,12 +16,6 @@ const Homepage = () => {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
-      
-      {/* API Test Section - Remove this after testing */}
-      <section className="py-8 px-4">
-        <APITest />
-      </section>
-      
       {/* Hero Section */}
       <section className="relative h-[600px] rounded-[34px] mx-4 my-8 overflow-hidden">
         <img 
