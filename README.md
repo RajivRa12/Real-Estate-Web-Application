@@ -231,17 +231,28 @@ VITE_FIREBASE_APP_ID=your-app-id
 
 ## 🚀 Deployment
 
+### Vercel Deployment (Recommended)
+1. **Connect Repository**: Go to [Vercel Dashboard](https://vercel.com/dashboard) and import your GitHub repository
+2. **Configure Build Settings**:
+   - Framework Preset: `Vite`
+   - Build Command: `pnpm build`
+   - Output Directory: `dist`
+   - Install Command: `pnpm install`
+3. **Environment Variables**: Add your Firebase configuration in Vercel dashboard:
+   - `VITE_FIREBASE_API_KEY`
+   - `VITE_FIREBASE_AUTH_DOMAIN`
+   - `VITE_FIREBASE_PROJECT_ID`
+   - `VITE_FIREBASE_STORAGE_BUCKET`
+   - `VITE_FIREBASE_MESSAGING_SENDER_ID`
+   - `VITE_FIREBASE_APP_ID`
+4. **Deploy**: Click "Deploy" and your app will be live!
+
 ### Netlify Deployment
 1. Connect your repository to Netlify
 2. Set build command: `pnpm build`
-3. Set publish directory: `dist/spa`
-4. Deploy!
-
-### Vercel Deployment
-1. Connect your repository to Vercel
-2. Set build command: `pnpm build`
-3. Set output directory: `dist/spa`
-4. Deploy!
+3. Set publish directory: `dist`
+4. Add environment variables in Netlify dashboard
+5. Deploy!
 
 ## 🤝 Contributing
 
